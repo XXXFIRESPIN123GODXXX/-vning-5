@@ -32,6 +32,7 @@ void fourToNine() {
 
 
    std::cout << sizeof a;
+   system("pause");
 }
 
 void tenToThirtn() {
@@ -75,18 +76,38 @@ void fourtnToFiftn() {
 
 }
 void sixtnToNintn() {
+    int x{ 4 };
 
+    int* pointX{ &x };
+    int* pointXtwo{ &x };
+
+    std::cout << pointX << '\n' << pointXtwo;
 }
 
+void Increment(int* pointer) {
+    
+     pointer+=1;
+}
 int main()
 {
     //fourToNine();
     //tenToThirtn();
     //fourtnToFiftn();
 
-    sixtnToNintn();
+    //sixtnToNintn();
+
+    int x{ 4 };
+
+    int* pointX{ &x };
+    int* pointXtwo{ &x };
 
 
+   /* std::cout << pointX << '\n' << pointXtwo << '\n\n';*/
+
+
+    std::cout << x << '\n';
+    Increment(pointX);
+    std::cout << x << '\n';
 
 
 
